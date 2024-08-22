@@ -28,6 +28,7 @@ ssh utilitybox << EOF
   echo ">>>>>>FINISH Download Kube Creds FINISH>>>>>>"
   echo "<<<<<<START Run Valkyrie Deployment START<<<<<<"
   kubectl set image deployment/valkyrie-hubot-deployment hubot=$GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/valkyrie:$BUILD_TAG
+  
   echo ">>>>>>FINISH Run Valkyrie Deployment FINISH>>>>>>"
 
 EOF
